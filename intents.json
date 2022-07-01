@@ -1,0 +1,217 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "Types Of Coffee",
+      "patterns": ["How much Types Of Coffee do you have?", "How much types do you have?"],
+      "responses": [
+        "10 Different Types Of Coffee,Sir.",
+        "10 types, Sir.",
+        "Only 10 types,Sir."
+      ]
+    },
+    {
+      "tag": "types of Coffee list with prices",
+      "patterns": ["The types of Coffee list, please.", "Can show me the types of coffee list?"],
+      "responses": [
+        "1.Cappuccino,2.Cortado,3.Latte,4.Red Eye,5.Mocha,6.Macchiato,7.Raf,8.Cold Brew,9.Espresso Con Panna,10.Cafe Cubano."
+      ]
+    },
+    {
+      "tag": "Coffee preference",
+      "patterns": ["ok. I choice 1 numner", "ok. I choice 2 numner", "ok. I choice 3 numner", "ok. I choice 4 numner","ok. I choice 5 numner","ok. I choice 6 numner","ok. I choice 7 numner","ok. I choice 8 numner","ok. I choice 9 numner","ok. I choice 10 numner"],
+      "responses": ["Sure,Sir.I'm confirming your order."]
+    },
+    {
+      "tag": "Types of Tea",
+      "patterns": ["The types of Tea list, please."],
+      "responses": ["5 Different Types Of Coffee,Sir.",
+        "5 types, Sir.",
+        "Only 5 types,Sir."]
+    },
+    {
+      "tag": "types of Tea list with prices",
+      "patterns": ["The types of Tea list, please.", "Can show me the types of Tea list?"],
+      "responses": [
+        "1.Black tea = 4$,2.Green Tea = 6$,3.White Tea = 6.16$,4.Oolong Tea = 5$,5.Herbal Tea = 7$"
+         ]
+    },
+    {
+      "tag": "Tea preference",
+      "patterns": ["ok. I choice 1 number", "ok. I choice 2 number", "ok. I choice 3 number", "ok. I choice 4 number","ok. I choice 5 number"],
+      "responses": ["Sure,Sir.I'm confirming your order."]
+    }, 
+    {
+      "tag": "Quantity of buying product",
+      "patterns": [
+              "I need 1 cup of number 1 coffee",
+              "I need 1 cup of number 2 coffee",
+              "I need 1 cup of number 3 coffee",
+              "I need 1 cup of number 4 coffee",
+              "I need 1 cup of number 5 coffee",
+              "I need 1 cup of number 6 coffee",
+              "I need 1 cup of number 7 coffee",
+              "I need 1 cup of number 8 coffee",
+              "I need 1 cup of number 9 coffee",
+              "I need 1 cup of number 10 coffee",
+              "I need 2 cup of number 1 coffee",
+              "I need 2 cup of number 2 coffee",
+              "I need 2 cup of number 3 coffee",
+              "I need 2 cup of number 4 coffee",
+              "I need 2 cup of number 5 coffee",
+              "I need 2 cup of number 6 coffee",
+              "I need 2 cup of number 7 coffee",
+              "I need 2 cup of number 8 coffee",
+              "I need 2 cup of number 9 coffee",
+              "I need 2 cup of number 10 coffee",
+              "I need 3 cup of number 1 coffee",
+              "I need 3 cup of number 2 coffee",
+              "I need 3 cup of number 3 coffee",
+              "I need 3 cup of number 4 coffee",
+              "I need 3 cup of number 5 coffee",
+              "I need 3 cup of number 6 coffee",
+              "I need 3 cup of number 7 coffee",
+              "I need 3 cup of number 8 coffee",
+              "I need 3 cup of number 9 coffee",
+              "I need 3 cup of number 10 coffee",
+              "I need 4 cup of number 1 coffee",
+              "I need 4 cup of number 2 coffee",
+              "I need 4 cup of number 3 coffee",
+              "I need 4 cup of number 4 coffee",
+              "I need 4 cup of number 5 coffee",
+              "I need 4 cup of number 6 coffee",
+              "I need 4 cup of number 7 coffee",
+              "I need 4 cup of number 8 coffee",
+              "I need 4 cup of number 9 coffee",
+              "I need 4 cup of number 10 coffee",
+              "I need 5 cup of number 1 coffee",
+              "I need 5 cup of number 2 coffee",
+              "I need 5 cup of number 3 coffee",
+              "I need 5 cup of number 4 coffee",
+              "I need 5 cup of number 5 coffee",
+              "I need 5 cup of number 6 coffee",
+              "I need 5 cup of number 7 coffee",
+              "I need 5 cup of number 8 coffee",
+              "I need 5 cup of number 9 coffee",
+              "I need 5 cup of number 10 coffee",
+              "I need 1 cup of number 1 Tea",
+              "I need 1 cup of number 2 Tea",
+              "I need 1 cup of number 3 Tea",
+              "I need 1 cup of number 4 Tea",
+              "I need 1 cup of number 5 Tea",
+              "I need 2 cup of number 1 Tea",
+              "I need 2 cup of number 2 Tea",
+              "I need 2 cup of number 3 Tea",
+              "I need 2 cup of number 4 Tea",
+              "I need 2 cup of number 5 Tea",
+              "I need 3 cup of number 1 Tea",
+              "I need 3 cup of number 2 Tea",
+              "I need 3 cup of number 3 Tea",
+              "I need 3 cup of number 4 Tea",
+              "I need 3 cup of number 5 Tea",
+              "I need 4 cup of number 1 Tea",
+              "I need 4 cup of number 2 Tea",
+              "I need 4 cup of number 3 Tea",
+              "I need 4 cup of number 4 Tea",
+              "I need 4 cup of number 5 Tea",
+              "I need 5 cup of number 1 Tea",
+              "I need 5 cup of number 2 Tea",
+              "I need 5 cup of number 3 Tea",
+              "I need 5 cup of number 4 Tea",
+              "I need 5 cup of number 5 Tea"],
+       "responses": ["I confirm your order.Thanks for ordering ,Sir. Can you tell us your location to deliver the product ?"]
+      },
+      {
+     "tag": "Asking location to deliver",
+     "patterns": ["Here is my location,........","Customer's location","You can find me here,....."],
+     "responses": ["Ok,Sir.Got it.You can get your product within 25 minutes. Thanks for staying with us"]
+    },
+      {
+      "tag": "asking for return product",
+      "patterns": ["Can i change this product?",
+                        "Can i return this product?", 
+                        "Please, Change this product", 
+                        "Please, return this product"],
+      "responses": ["Sure ,Sir. But We'll cut 50% money for Return or Change."]
+    }
+  ]
+}

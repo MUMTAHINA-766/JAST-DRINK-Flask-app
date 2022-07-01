@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="sylesheet">
+    <link rel="stylesheet" href="/static/style.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}JAST DRINK FlaskApp{% endblock %} </title>
+        <style>
+            nav a {
+                color: #d64161;
+                font-size: 3em;
+                margin-left: 50px;
+                text-decoration: none;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <nav>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('coffeeStore') }}">Coffee Store</a>
+            <a  href="{{ url_for('reservation') }}">Reservation</a>
+            
+        </nav>
+        <hr>
+        <div class="content">
+            {% block content %}
+            <style>
+                 div.content {
+                float: right;
+                width: 700px;
+                height: 500px;
+                margin: 10px auto;
+                border: 0;
+            }
+            </style>
+           
+            {% endblock %}
+        </div>
+ <!--Chatbot#############################################  -->
+<!DOCTYPE html>
+<html lang="en">
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" >
+<link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="sylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <style type=text/css>
+    body{
+        background-image:url('/static/images/kf.webp');
+        background-size: cover;
+        }
+    </style>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi,This is JAST DRINK Shop.How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+    </body>
+</html>
